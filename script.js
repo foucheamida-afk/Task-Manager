@@ -95,3 +95,11 @@ function deleteTask(id) {
   renderTasks();
 }
 
+function updateCounter() {
+  const total = tasks.length;
+  const completed = tasks.filter(task => task.completed).length;
+  taskCounter.textContent = `Total: ${total} | Completed: ${completed}`;
+}
+
+
+
