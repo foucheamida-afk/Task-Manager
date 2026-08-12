@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-        <!-- STEP 1: Input area for adding a new task -->
-        <div class="input-row">
-            <input type="text" id="task-input" placeholder="Enter a new task..." />
-            <button id="add-btn">Add Task</button>
-        </div>
-        
-         <!-- STEP 2: Counter showing total / completed tasks -->
-        <p id="task-counter">Total: 0 | Completed: 0</p>
+   <div class="app">
+    <div class="app-header">
+      <h1>Task Manager</h1>
+      <!-- BONUS STEP A: Dark mode toggle button -->
+      <button id="theme-toggle" title="Toggle dark mode">🌙</button>
+    </div>
+
+    <!-- STEP 1: Input area for adding a new task -->
+    <div class="input-row">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <button id="add-btn">Add Task</button>
+    </div>
+
+    <!-- STEP 2: Counter showing total / completed tasks -->
+    <p id="task-counter">Total: 0 | Completed: 0</p>
+
+    <!-- BONUS STEP B: Filter buttons (All / Pending / Completed) -->
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <!-- STEP 3: The task list itself. JS will fill this in dynamically. -->
+    <ul id="task-list"></ul>
+  </div>
+
 
     <script src="script.js"></script>
 </body>
