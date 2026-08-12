@@ -89,3 +89,9 @@ function addTask() {
   renderTasks();
 }
 
+function deleteTask(id) {
+  tasks = tasks.filter(task => task.id !== id);
+  saveTasks();
+  renderTasks();
+}
+
