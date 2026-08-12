@@ -101,5 +101,12 @@ function updateCounter() {
   taskCounter.textContent = `Total: ${total} | Completed: ${completed}`;
 }
 
+function saveTasks() {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 
+function loadTasks() {
+  const stored = localStorage.getItem('tasks');
+  tasks = stored ? JSON.parse(stored) : [];
+}
 
