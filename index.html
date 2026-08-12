@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-    
+    <div class="app">
+        <!-- STEP 1: Input area for adding a new task -->
+        <div class="input-row">
+            <input type="text" id="task-input" placeholder="Enter a new task..." />
+            <button id="add-btn">Add Task</button>
+        </div>
+        
+         <!-- STEP 2: Counter showing total / completed tasks -->
+        <p id="task-counter">Total: 0 | Completed: 0</p>
 
     <script src="script.js"></script>
 </body>
